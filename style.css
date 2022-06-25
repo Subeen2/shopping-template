@@ -7,12 +7,14 @@
   --color-pink: #fd7f84;
   --color-light-grey: #dfdfdf;
 
+  /* size */
   --base-space: 8px;
-  --size-button: 60px;
+  --size-button: 40px;
   --size-border: 4px;
   --size-thumbnail: 50px;
-  --font-size: 18px;
+  --font-size: 16px;
 
+  /* annimation */
   --animation-duration: 300ms;
 }
 
@@ -27,7 +29,7 @@ body {
 
 .logo {
   cursor: pointer;
-  transition: transform 300ms ease;
+  transition: transform var(--animation-duration) ease;
 }
 
 .btn {
@@ -35,7 +37,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: transform 300ms ease;
+  transition: transform var(--animation-duration) ease;
   margin-right: var(--base-space);
 }
 
@@ -47,6 +49,7 @@ body {
 .buttons {
   display: flex;
   align-items: center;
+  padding: 4px;
 }
 
 .imgBtn {
@@ -56,7 +59,7 @@ body {
 
 .colorBtn {
   font-size: var(--font-size);
-  padding: calc(var(--base-space) * 2);
+  padding: calc(var(--base-space) * 1.5) var(--base-space);
   border-radius: var(--size-border);
 }
 
@@ -73,14 +76,12 @@ body {
 }
 
 .items {
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 90%;
   list-style: none;
   padding-left: 0;
   overflow-y: scroll;
-
 }
-
 
 .item {
   background-color: var(--color-white);
